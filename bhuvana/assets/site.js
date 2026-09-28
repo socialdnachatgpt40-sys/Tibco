@@ -29,8 +29,9 @@ if(hero){
     void tabs[cur].offsetWidth;tabs[cur].classList.add('on');arm();
   }
   tabs.forEach((t,i)=>t.onclick=()=>go(i));
-  pp.onclick=()=>{paused=!paused;pp.textContent=paused?'Play':'Pause';arm()};
-  pp.textContent=paused?'Play':'Pause';
+  const ppSet=()=>pp.setAttribute('aria-label',paused?'Play slideshow':'Pause slideshow');
+  pp.onclick=()=>{paused=!paused;ppSet();hero.classList.toggle('stopped',paused);arm()};
+  ppSet();hero.classList.toggle('stopped',paused);
   hero.addEventListener('mouseenter',()=>{hover=true;arm()});hero.addEventListener('mouseleave',()=>{hover=false;arm()});
   let x0=null;hero.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
   hero.addEventListener('touchend',e=>{if(x0==null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(cur+(d<0?1:-1));x0=null});
