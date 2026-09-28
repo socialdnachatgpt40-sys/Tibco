@@ -21,13 +21,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 </head>
-<body>
+<body class="home">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
 <symbol id="i-badge-check" viewBox="0 0 24 24"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /> <path d="m16 9-5.5 5.5L8 12" /></symbol>
 <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 3v18" /> <path d="m19 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1" /> <path d="m5 8 3 8a5 5 0 0 1-6 0zV7" /> <path d="M7 21h10" /></symbol>
 <symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol>
 <symbol id="i-sprout" viewBox="0 0 24 24"><path d="M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3" /> <path d="M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4" /> <path d="M5 21h14" /></symbol>
-<symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3" /> <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /> <path d="m21 3 1 11h-2" /> <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /> <path d="M3 4h8" /></symbol>
+<symbol id="i-handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3" /> <path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.790 5.790 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4" /> <path d="m21 3 1 11h-2" /> <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3" /> <path d="M3 4h8" /></symbol>
 <symbol id="i-sofa" viewBox="0 0 24 24"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3" /> <path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z" /> <path d="M4 18v2" /> <path d="M20 18v2" /> <path d="M12 4v9" /></symbol>
 <symbol id="i-trees" viewBox="0 0 24 24"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" /> <path d="M7 16v6" /> <path d="M13 19v3" /> <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" /></symbol>
 <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /></symbol>
@@ -57,35 +57,26 @@
 </header>
 
 <main id="main">
-<section class="hero intro" aria-label="Bhuvana Group and its projects">
-  <div class="w hero-g">
-    <div class="hero-copy">
-      <p class="eyebrow pill">North Hyderabad · Since 2019</p>
-      <h1 class="d1">Homes planned around <em>open land.</em></h1>
-      <p class="lead-p">Weekend villas, city apartments and plots along the NH 44 corridor, each one laid out around gardens, light and air before a single home is drawn.</p>
-      <div class="cta-row"><button class="btn" data-lead>Book a site visit</button><a class="btn ghost" href="projects.html">Explore projects</a></div>
-      <dl class="stats"><div><dt>communities</dt><dd>3</dd></div><div><dt>acres at Fortune Greens</dt><dd>86</dd></div><div><dt>independent villas</dt><dd>316</dd></div></dl>
-    </div>
-    <div class="hero-stage" aria-roledescription="carousel" aria-label="Projects" tabindex="0">
-      <div class="slide on" role="group" aria-roledescription="slide" aria-label="Fortune Greens">
-        <img src="assets/img/fg/fg-clubhouse-2000.webp" srcset="assets/img/fg/fg-clubhouse-1000.webp 1000w, assets/img/fg/fg-clubhouse-2000.webp 2000w" sizes="(max-width:960px) 100vw, 58vw" alt="Clubhouse at Fortune Greens on a clear day" style="object-position:50% 55%" fetchpriority="high">
-        <a class="hcard" href="fortune-greens.html"><div><span class="chip hot">Now selling</span><b style="margin-top:10px">Fortune Greens</b><span class="cap">Weekend villas and plots, Toopran–Masaipet</span></div><span class="arrow" aria-hidden="true">→</span></a>
+<section class="hero intro" aria-label="Bhuvana Group">
+  <div class="hero-stage" aria-roledescription="carousel" aria-label="Bhuvana communities" tabindex="0">
+      <div class="slide on" role="group" aria-roledescription="slide" aria-label="Fortune Greens clubhouse">
+        <img src="assets/img/fg/fg-clubhouse-2000.webp" srcset="assets/img/fg/fg-clubhouse-1000.webp 1000w, assets/img/fg/fg-clubhouse-2000.webp 2000w" sizes="100vw" alt="Clubhouse at Fortune Greens on a clear day" style="object-position:50% 55%" fetchpriority="high">
       </div>
       <div class="slide" role="group" aria-roledescription="slide" aria-label="Urban Greens">
         <img src="assets/img/urban-greens-aerial.webp" alt="Urban Greens apartments and rooftop gardens from above" style="object-position:50% 50%" loading="lazy">
-        <a class="hcard" href="urban-greens.html"><div><span class="chip">Ready to move</span><b style="margin-top:10px">Urban Greens</b><span class="cap">2 and 3 BHK apartments, Kompally</span></div><span class="arrow" aria-hidden="true">→</span></a>
       </div>
-      <div class="slide" role="group" aria-roledescription="slide" aria-label="Life at Fortune Greens">
-        <img src="assets/img/fg/fg-avenue-2000.webp" srcset="assets/img/fg/fg-avenue-1000.webp 1000w, assets/img/fg/fg-avenue-2000.webp 2000w" sizes="(max-width:960px) 100vw, 58vw" alt="Tree-lined villa avenue at Fortune Greens" style="object-position:50% 55%" loading="lazy">
-        <a class="hcard" href="about.html"><div><span class="chip">Land first</span><b style="margin-top:10px">Avenues before addresses</b><span class="cap">How every Bhuvana community is planned</span></div><span class="arrow" aria-hidden="true">→</span></a>
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="Fortune Greens avenue">
+        <img src="assets/img/fg/fg-avenue-2000.webp" srcset="assets/img/fg/fg-avenue-1000.webp 1000w, assets/img/fg/fg-avenue-2000.webp 2000w" sizes="100vw" alt="Tree-lined villa avenue at Fortune Greens" style="object-position:50% 55%" loading="lazy">
       </div>
-      <div class="slide" role="group" aria-roledescription="slide" aria-label="Green Valley">
-        <img src="assets/img/green-valley.webp" alt="Green Valley plotted layout in Kompally with lit avenues" style="object-position:50% 50%" loading="lazy">
-        <a class="hcard" href="green-valley.html"><div><span class="chip">Completed</span><b style="margin-top:10px">Green Valley</b><span class="cap">Open plots, ready to build on, Kompally</span></div><span class="arrow" aria-hidden="true">→</span></a>
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="Fortune Greens villas">
+        <img src="assets/img/fg/fg-villas-aerial-2000.webp" srcset="assets/img/fg/fg-villas-aerial-1000.webp 1000w, assets/img/fg/fg-villas-aerial-2000.webp 2000w" sizes="100vw" alt="Villas and gardens at Fortune Greens from above" style="object-position:50% 50%" loading="lazy">
       </div>
-      <div class="hidx"><div class="tabs"><button type="button" class="tab" data-n="1/4">Fortune Greens</button><button type="button" class="tab" data-n="2/4">Urban Greens</button><button type="button" class="tab" data-n="3/4">Land first</button><button type="button" class="tab" data-n="4/4">Green Valley</button></div><button type="button" class="pp" id="pp">Pause</button></div>
-    </div>
   </div>
+  <div class="w hero-copy">
+    <h1 class="d1">Homes planned around <em>open land.</em></h1>
+    <div class="cta-row"><button class="btn" data-lead>Book a site visit</button><a class="btn ghost" href="projects.html">Explore projects</a></div>
+  </div>
+  <div class="hidx"><div class="tabs"><button type="button" class="tab" aria-label="Show image 1 of 4" data-n="1/4"></button><button type="button" class="tab" aria-label="Show image 2 of 4" data-n="2/4"></button><button type="button" class="tab" aria-label="Show image 3 of 4" data-n="3/4"></button><button type="button" class="tab" aria-label="Show image 4 of 4" data-n="4/4"></button></div><button type="button" class="pp" id="pp" aria-label="Pause slideshow"></button></div>
 </section>
 
 <section class="trust" aria-label="Why Bhuvana"><ul class="w">
@@ -99,6 +90,7 @@
   <p class="eyebrow">Who we are</p>
   <p class="stmt">Bhuvana Group builds weekend villas, city apartments and plots across north Hyderabad, each one planned around <em>open land, light and air.</em> Four partners started the group in 2019. Three communities later, the idea hasn't changed.</p>
   <p class="more"><a class="ul" href="about.html">About the group →</a></p>
+  <dl class="stats"><div><dt>communities across north Hyderabad</dt><dd>3</dd></div><div><dt>acres at Fortune Greens</dt><dd>86</dd></div><div><dt>independent villas</dt><dd>316</dd></div><div><dt>year the group was founded</dt><dd>2019</dd></div></dl>
 </div></section>
 
 <section class="sec" id="projects" aria-label="Projects" style="padding-top:0"><div class="w">
