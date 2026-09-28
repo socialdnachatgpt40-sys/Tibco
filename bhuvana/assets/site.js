@@ -1,13 +1,11 @@
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const still=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const hdr=$('#hdr'),top_=$('.hero,.phero'),sticky=$('#sticky');
+const hdr=$('#hdr'),sticky=$('#sticky');
 
-/* header: transparent over image tops, solid everywhere else */
+/* header: light at the top, frosted once the page moves */
 function onScroll(){
-  if(!top_){hdr.classList.add('solid');sticky.classList.toggle('show',scrollY>200);return}
-  const r=top_.getBoundingClientRect();
-  hdr.classList.toggle('solid',r.bottom<=90||$('#mnav').classList.contains('open'));
-  sticky.classList.toggle('show',r.bottom<innerHeight*.5);
+  hdr.classList.toggle('solid',scrollY>8||$('#mnav').classList.contains('open'));
+  sticky.classList.toggle('show',scrollY>innerHeight*.6);
 }
 addEventListener('scroll',onScroll,{passive:true});onScroll();
 
@@ -87,3 +85,9 @@ if(pl.length){
 
 $$('dialog').forEach(d=>d.addEventListener('click',e=>{if(e.target===d||e.target.closest('[data-close]'))d.close()}));
 $('#y').textContent=new Date().getFullYear();
+
+/* gentle reveal as sections enter */
+if(!still&&'IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
+  $$('.rv').forEach(el=>io.observe(el));
+}else $$('.rv').forEach(el=>el.classList.add('in'));
